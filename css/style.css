@@ -21,23 +21,25 @@ body {
   background-color: #fff;
 } */
 
-.flex-container{
+.flex-container {
   display: flex;
   flex-flow: row;
 }
+
 .sidebar-container {
   position: relative;
   z-index: -1;
   top: 0;
-  left: 0;
-  height: 100vh;
-  width: 225px;
-  background-color: #fff;
+  left: -13px;
+  height: 30%;
+  width: 250px;
 }
 
 #calender-heading {
   padding-top: 20px;
 }
+
+/* Navbar */
 
 .bg-light {
   position: relative;
@@ -110,3 +112,102 @@ path {
   text-align: center;
 }
 
+/* Navbar over */
+
+/* Sidebar */
+.sidebar-container a {
+  color: initial;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sidebar-container li {
+  padding: 0.25em 0;
+  list-style: none;
+  padding-left: 30px;
+}
+
+i {
+  display: inline-block;
+  width: 1rem;
+  margin-right: 13px;
+  text-align: right;
+}
+
+  /* Sidebar-1 */
+#sidebar-1 {
+  position: relative;
+  top: 0;
+  background-color: #fff;
+}
+
+#sidebar-1 li:last-child {
+  padding-bottom: 20px;
+}
+  /* Sidebar-1 ends */
+  /* Sidebar-2 */
+
+#sidebar-2 {
+  position: relative;
+  top: -14px;
+  background-color: #fff;
+}
+
+#sidebar-2 h6 {
+  padding-left: 30px;
+  padding-top: 8px;
+  text-transform: uppercase;
+  color: #737373;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dash {
+  position: absolute;
+  top: 0;
+  left: -28px;
+  height: 100%;
+  width: 10px;
+  background-color: #3366ff;
+  border-radius: 5px;
+}
+
+.selected {
+  position: relative;
+  background-color: #3366ff;
+  color: #fff;
+  border-radius: 5px;
+  margin: auto 20px;
+  font-weight: 100;
+}
+
+.selected i {
+  transform: translateX(-120%);
+  margin-right: 0;
+}
+
+.selected a{
+  color: #fff;
+  margin-left: -5px;
+}
+
+#sidebar-2 li:last-child {
+  padding-bottom: 20px;
+}
+
+  /* Sidebar-2 ends */
+  /* Sidebar-3 begins */
+
+#sidebar-3 {
+  position: relative;
+  top: -28px;
+  background-color: #fff;
+}
+
+#sidebar-3 li:first-child {
+  padding-top: 20px;
+}
+
+#sidebar-3 li:last-child {
+  padding-bottom: 20px;
+}

@@ -3,17 +3,63 @@
     flex-flow: row;
 }
 
-.add-event {
+#add-event {
     background: white;
     height: 90vh;
     width: 20%;
     margin-right: 20px;
     border-radius: 15px;
+    align-items: center;
+    padding: 0 10px;
+}
+#add-btn {
+    margin-top: 20px ;
+    width: 80% ;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.8em;
 }
 
-.calendar {
+#calendar {
     background: white;
     height: 90vh;
     width: 80%;
     border-radius: 15px;
 }
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    background-color: #333;
+    opacity: 0.8;
+}
+.backdrop-rmv {
+    display: none;
+}
+
+.modal1 {
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    height: 50%;
+    width: 33%;
+    z-index: 10;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.modal-rmv {
+    display: none;
+}
+
+.form1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

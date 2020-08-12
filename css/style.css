@@ -11,6 +11,10 @@ body {
   background-color: #f2f2f2;
 }
 
+h2 {
+  display: inline !important ;
+}
+
 /* #sidebar-1{              // iski sarri props parent container me daal di
   position: relative;
   z-index: -1; 
@@ -174,6 +178,13 @@ i {
 
 .selected {
   position: relative;
+  background-color: #3366ff;
+  color: #fff;
+  border-radius: 5px;
+  margin: auto 20px;
+  font-weight: 100;
+}
+li:hover {
   background-color: #3366ff;
   color: #fff;
   border-radius: 5px;

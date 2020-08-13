@@ -18,8 +18,8 @@ eventData = [
 calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: 'dayGridMonth',
     headerToolbar: {
-        left: 'today',
-        center: 'prev title next',
+        left: 'today prev,next',
+        center: 'title',
         right: 'dayGridMonth,timeGridWeek,timeGridDay'
     },
     events: eventData

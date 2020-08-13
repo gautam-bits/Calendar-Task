@@ -9,6 +9,7 @@
 
 body {
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 /* #sidebar-1{              // iski sarri props parent container me daal di
@@ -39,11 +40,16 @@ body {
   padding-top: 20px;
 }
 
+h2 {
+  display: inline;
+}
+
 /* Navbar */
 
 .bg-light {
   position: relative;
   background-color: white!important;
+  height: 53px;
 }
 
 .navbar-brand {
@@ -246,4 +252,43 @@ i {
 
 #sidebar-3 li:last-child {
   padding-bottom: 20px;
+}
+
+  /* Sidebar-3 ends here */
+/* Sidebar ends here   */
+/* Events begin here */
+
+.event {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-column-gap: 5px;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 20px 0;
+}
+
+.img-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.blue {
+  height: 10px;
+}
+
+.text-container {
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.event-heading {
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+.text-wrapper {
+  margin: 2px 0;
+  color:#737373;
 }

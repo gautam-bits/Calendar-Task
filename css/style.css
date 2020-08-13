@@ -29,7 +29,6 @@ body {
 
 .sidebar-container {
   position: relative;
-  z-index: -1;
   top: 0;
   left: -13px;
   height: 30%;
@@ -138,12 +137,24 @@ path {
   .notification {
     transform: translate(20px, 20px);
   }
+
+  .bg-light {
+    height: auto;
+  }
 }
 /* Navbar over */
 
 /* Sidebar */
+
+i {
+  display: inline-block;
+  width: 1rem;
+  margin-right: 13px;
+  text-align: right;
+}
+
 .sidebar-container a {
-  color: initial;
+  color: black;
   font-size: 13px;
   font-weight: 600;
 }
@@ -154,54 +165,37 @@ path {
   list-style: none;
   padding-left: 30px;
   border-radius: 5px;
-  transition: all 500ms ease-in-out;
+  cursor: pointer;
 }
 
 .sidebar-container li:hover {
-  position: relative;
-  padding: 0.25em 0;
-  list-style: none;
-  padding-left: 30px;
-  border-radius: 5px;
-  background: #3366ff!important;
-  z-index: 10!important;
+  background: #3366ff;
   margin: auto 20px;
   color: white;
 }
 
 .sidebar-container li:hover a {
   color: white;
+  text-decoration: none;
 }
 
 .sidebar-container li:hover i {
   margin-left: -20px;
 }
 
-i {
-  display: inline-block;
-  width: 1rem;
-  margin-right: 13px;
-  text-align: right;
-}
-
   /* Sidebar-1 */
 #sidebar-1 {
-  position: relative;
-  top: 0;
   background-color: #fff;
-}
-
-#sidebar-1 li:last-child {
-  padding-bottom: 20px;
+  height: 205px;
 }
 
   /* Sidebar-1 ends */
   /* Sidebar-2 */
 
 #sidebar-2 {
-  position: relative;
-  top: -14px;
+  margin-top: 1px;
   background-color: #fff;
+  height: 300px;
 }
 
 #sidebar-2 h6 {
@@ -233,27 +227,15 @@ i {
   margin-left: -20px;
 }
 
-#sidebar-2 li:last-child {
-  padding-bottom: 20px;
-}
-
   /* Sidebar-2 ends */
   /* Sidebar-3 begins */
 
 #sidebar-3 {
-  position: relative;
-  top: -28px;
   background-color: #fff;
+  margin-top: 1px;
+  padding-top: 15px;
+  height: 100px;
 }
-
-#sidebar-3 li:first-child {
-  padding-top: 20px;
-}
-
-#sidebar-3 li:last-child {
-  padding-bottom: 20px;
-}
-
   /* Sidebar-3 ends here */
 /* Sidebar ends here   */
 /* Events begin here */
@@ -264,17 +246,13 @@ i {
   grid-column-gap: 5px;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
-  padding: 20px 0;
+  padding: 12px 0;
 }
 
 .img-container img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-}
-
-.blue {
-  height: 10px;
 }
 
 .text-container {
@@ -292,3 +270,5 @@ i {
   margin: 2px 0;
   color:#737373;
 }
+
+/* events end */

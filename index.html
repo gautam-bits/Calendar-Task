@@ -17,94 +17,91 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Blue <span id="web" style="color: black; font-weight: 500;">Mango</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-      </form>
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link notification" href="#">
-            <svg viewbox="-10 0 35 35">
-              <path class="notification--bell"
-                d="M14 12v1H0v-1l0.73-0.58c0.77-0.77 0.81-3.55 1.19-4.42 0.77-3.77 4.08-5 4.08-5 0-0.55 0.45-1 1-1s1 0.45 1 1c0 0 3.39 1.23 4.16 5 0.38 1.88 0.42 3.66 1.19 4.42l0.66 0.58z">
-              </path>
-              <path class="color-fill" d="M7 15.7c1.11 0 2-0.89 2-2H5c0 1.11 0.89 2 2 2z"></path>
-            </svg>
-            <span class="notification--num">6</span>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <img
-            src="https://images.creativemarket.com/0.1.0/ps/1822915/6793/3682/m1/fpnw/wm1/british-flag-.jpg?1477811604&s=392fc272ec4e558e1e9f3b7dea190f2f"
-            alt="flag" width="40px">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            English
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <img src="https://source.unsplash.com/random/40x40" alt="admin"
-            style="border-radius: 50%; margin-top: -20px;">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <strong>Jon Aly</strong> <br> Admin
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Blue <span id="web" style="color: black; font-weight: 500;">Mango</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+  </form>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link notification" href="#">
+        <svg viewbox="-10 0 35 35">
+          <path class="notification--bell"
+            d="M14 12v1H0v-1l0.73-0.58c0.77-0.77 0.81-3.55 1.19-4.42 0.77-3.77 4.08-5 4.08-5 0-0.55 0.45-1 1-1s1 0.45 1 1c0 0 3.39 1.23 4.16 5 0.38 1.88 0.42 3.66 1.19 4.42l0.66 0.58z">
+          </path>
+          <path class="color-fill" d="M7 15.7c1.11 0 2-0.89 2-2H5c0 1.11 0.89 2 2 2z"></path>
+        </svg>
+        <span class="notification--num">6</span>
+      </a>
+    </li>
+    <li class="nav-item dropdown" id="flag-container">
+      <img
+        src="https://images.creativemarket.com/0.1.0/ps/1822915/6793/3682/m1/fpnw/wm1/british-flag-.jpg?1477811604&s=392fc272ec4e558e1e9f3b7dea190f2f"
+        alt="flag" width="40px">
+      <span class="none">English</span>
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown" id="profile-container">
+      <img src="https://source.unsplash.com/random/40x40" alt="admin">
+      <span class="none"><strong>Jon Aly</strong> <br> Admin</span>
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+
+<div class="container-fluid flex-container">
+  <div class="sidebar-container">
+    <section id="sidebar-1">
+      <ul>
+        <li><i class="fas fa-stopwatch"></i><a href="">Dashboard</a></li>
+        <li><i class="fas fa-border-all"></i><a href="">Products</a></li>
+        <li><i class="far fa-heart"></i><a href="">Favourites</a></li>
+        <li><i class="far fa-comments"></i><a href="">Inbox</a></li>
+        <li><i class="fas fa-list-ul"></i><a href="">Order Lists</a></li>
+        <li><i class="fas fa-search-dollar"></i><a href="">Product Stock</a></li>
       </ul>
-    </div>
-  </nav>
-
-
-  <div class="container-fluid flex-container">
-    <div class="sidebar-container">
-      <section id="sidebar-1">
-        <ul>
-          <li><i class="fas fa-stopwatch"></i><a href="">Dashboard</a></li>
-          <li><i class="fas fa-border-all"></i><a href="">Products</a></li>
-          <li><i class="far fa-heart"></i><a href="">Favourites</a></li>
-          <li><i class="far fa-comments"></i><a href="">Inbox</a></li>
-          <li><i class="fas fa-list-ul"></i><a href="">Order Lists</a></li>
-          <li><i class="fas fa-search-dollar"></i><a href="">Product Stock</a></li>
-        </ul>
-      </section>
-      <section id="sidebar-2">
-        <ul>
-          <h6>Pages</h6>
-          <li><i class="fas fa-gift"></i><a href="#">Pricing</a></li>
-          <li class="selected">
-            <div class="dash"></div><i class="far fa-calendar-alt"></i></i><a href="" style="color: white;">Calendar</a>
-          </li>
-          <li><i class="far fa-clipboard"></i><a href="">To-Do</a></li>
-          <li><i class="fas fa-user-friends"></i><a href="">Contact</a></li>
-          <li><i class="fas fa-money-bill"></i><a href="">Invoice</a></li>
-          <li><i class="far fa-chart-bar"></i><a href="">UI Elements</a></li>
-          <li><i class="fas fa-user-alt"></i><a href="">Team</a></li>
-          <li><i class="far fa-calendar-alt"></i><a href="">Table</a></li>
-        </ul>
-      </section>
-      <section id="sidebar-3">
-        <ul>
-          <li><i class="fas fa-cog"></i><a href="">Settings</a></li>
-          <li><i class="fas fa-sign-out-alt"></i><a href="">Logout</a></li>
-        </ul>
-      </section>
-    </div>
+    </section>
+    <section id="sidebar-2">
+      <ul>
+        <h6>Pages</h6>
+        <li><i class="fas fa-gift"></i><a href="#">Pricing</a></li>
+        <li class="selected">
+          <div class="dash"></div><i class="far fa-calendar-alt"></i></i><a href="" style="color: white;">Calendar</a>
+        </li>
+        <li><i class="far fa-clipboard"></i><a href="">To-Do</a></li>
+        <li><i class="fas fa-user-friends"></i><a href="">Contact</a></li>
+        <li><i class="fas fa-money-bill"></i><a href="">Invoice</a></li>
+        <li><i class="far fa-chart-bar"></i><a href="">UI Elements</a></li>
+        <li><i class="fas fa-user-alt"></i><a href="">Team</a></li>
+        <li><i class="far fa-calendar-alt"></i><a href="">Table</a></li>
+      </ul>
+    </section>
+    <section id="sidebar-3">
+      <ul>
+        <li><i class="fas fa-cog"></i><a href="">Settings</a></li>
+        <li><i class="fas fa-sign-out-alt"></i><a href="">Logout</a></li>
+      </ul>
+    </section>
+  </div>
     <div id="modal1" class="modal-rmv">
       <form id="form1">
         <div class="form-group">
@@ -184,7 +181,7 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
   <script src="./scripts/scripts.js"></script>
-
+  <script src="./scripts/dashboard.js"></script>
 </body>
 
 </html>

@@ -65,7 +65,10 @@ function AddTodo(todo,date,address) {
     calendar.render();
     // console.log(calendar.getEvents());
     RenderEventsAll();
+
     
+
+    setTimeout(function(){ SelectXButtonAll(); }, 100);
 
 }
 function RemoveTodo(todo,date) {
@@ -80,15 +83,17 @@ function RemoveTodo(todo,date) {
         if(nameList[index] === todo) removeIndex = index ;
     }
     eventData.splice(removeIndex, 1);
-    console.log(eventData);
-
+    console.log("loda le le plox",todo);
+    calendar.render();
     calendar.getEvents().forEach(event => event.remove());
     for (let index = 0; index < eventData.length; index++) {
         calendar.addEvent(eventData[index]);
     }
     calendar.render();
-    console.log(420);
+    setTimeout(function(){ SelectXButtonAll(); }, 100);
+
     
+
 }
 
 function RenderEventsAll() {
@@ -111,7 +116,10 @@ function RenderEventsAll() {
         </div>`
     }).join('');
     document.querySelector('.events').innerHTML = renderedContent;
+
     // SelectXButtonAll();
+
+
 }
 
 function SelectXButtonAll()  {
@@ -125,7 +133,7 @@ function SelectXButtonAll()  {
             
 
             RemoveTodo(title,date);
-            SelectXButtonAll()
+
             // console.log(eventData);
             RenderEventsAll();
             
@@ -141,7 +149,6 @@ $(addEventButton).click(() => {
     $(modal).addClass("modal1");
     $(backdrop).removeClass("backdrop-rmv");
     $(modal).removeClass("modal-rmv")
-    SelectXButtonAll();
 })
 
 $(backdrop).click(() => {
@@ -187,4 +194,4 @@ $(formAddBtn).click(() => {
 // console.log(eventsDescription)
 
 
-SelectXButtonAll();
+setTimeout(function(){ SelectXButtonAll(); }, 100);

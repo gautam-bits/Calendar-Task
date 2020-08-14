@@ -1,7 +1,9 @@
-var toggler = document.querySelector(".navbar-toggler");
-var display = false;
-var sidebar = document.querySelector(".sidebar-container");
-var count = 0;
+let toggler = document.querySelector(".navbar-toggler");
+let display = false;
+let sidebar = document.querySelector(".sidebar-container");
+
+
+let count = 0;
 
 
 setInterval(() => {
@@ -23,16 +25,18 @@ function displaySwitcher() {
     sidebar.style.zIndex = "200";
     sidebar.style.display = "block";
     display = true;
+
   } else {
     sidebar.style.display = "none";
     display = false;
   }
+
 }
 
 function displayInitial() {
   sidebar.style.position = "relative";
   sidebar.style.marginTop = "0";
   sidebar.style.display = "block";
-  sidebar.style.zIndex = "2";
+  sidebar.style.zIndex = "10";
   count = 0;
 }

@@ -31,7 +31,7 @@ body {
   position: relative;
   top: 0;
   left: -13px;
-  height: 30%;
+  height: auto;
   width: 250px;
 }
 
@@ -47,6 +47,7 @@ body {
 
 .bg-light {
   position: relative;
+  width: 100%;
   background-color: white!important;
   height: 53px;
 }
@@ -58,13 +59,17 @@ body {
 }
 
 .navbar-toggler {
+  position: absolute;
+  left: 210px;
   display: block!important;
   border: none;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
-.form-control {
-  width: 400px!important;
+.navbar .form-control {
+  position: absolute;
+  left: 300px;
+  width: 30vw!important;
   margin-left: 20px;
   padding-top: 5px;
   padding-left: 45px;
@@ -82,17 +87,17 @@ body {
 }
 
 .notification {
-    position: relative;
-    top: 5%;
-    right: 0;
-    width: 3em; 
-    height: 3em;
-    margin-right: 15px;
+  position: relative;
+  top:10px;
+  right: 0;
+  width:4rem; 
+  height: 4rem;
+  margin-right: 15px;
 }    
 
 svg {
-  width: 3em;
-  height: 3em;
+  width:4rem;
+  height: 4rem;
 }
 
 path {
@@ -117,29 +122,60 @@ path {
   text-align: center;
 }
 
-.dropdown img, .dropdown a {
-  display: inline-block;
-  color: black!important;
-  font-size: 13px;
+.navbar ul {
+  display: flex;
+  flex-flow: row;
+  position: absolute;
+  left: 900px;
 }
 
-.dropdown img {
-  margin-top: 10px;
-  margin-left: 30px;
+#flag-container {
+  margin-top: 20px;
+  margin-left: 16px;
+  display: flex;
+  font-size: 16px;
+}
+
+#flag-container img {
+  height: 25px;
+  width: auto;
   border-radius: 5px;
 }
 
-@media (max-width: 990px) {
-  nav ul {
-    transform: translate(-110px, -20px);
-  }
+#flag-container a {
+  position: relative;
+  transform: translateY(-7px);
+}
 
-  .notification {
-    transform: translate(20px, 20px);
-  }
+#flag-container span {
+  position: relative;
+  height: 100%;
+  vertical-align: center;
+  margin-left: 5px;
+}
 
-  .bg-light {
-    height: auto;
+#profile-container {
+  margin-top: 12px;
+  margin-left: 20px;
+  display: flex;
+  font-size: 14px;
+}
+
+#profile-container img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+#profile-container span {
+  position: relative;
+  height: 100%;
+  vertical-align: center;
+  margin-left: 8px;
+}
+
+@media (max-width: 1300px) {
+  .none {
+    display: none;
   }
 }
 /* Navbar over */
@@ -161,7 +197,7 @@ i {
 
 .sidebar-container li {
   position: relative;
-  padding: 0.25em 0;
+  padding: 0.608vh 0;
   list-style: none;
   padding-left: 30px;
   border-radius: 5px;
@@ -183,19 +219,25 @@ i {
   margin-left: -20px;
 }
 
+.display {
+  position: absolute;
+  z-index: 200;
+  display: block;
+}
+
   /* Sidebar-1 */
 #sidebar-1 {
   background-color: #fff;
-  height: 205px;
+  height: 31.2vh;
 }
-
   /* Sidebar-1 ends */
   /* Sidebar-2 */
 
 #sidebar-2 {
-  margin-top: 1px;
+  position: relative;
+  margin-top: 0.1522vh;
   background-color: #fff;
-  height: 300px;
+  height: 45.66vh;
 }
 
 #sidebar-2 h6 {
@@ -231,10 +273,11 @@ i {
   /* Sidebar-3 begins */
 
 #sidebar-3 {
+  position: relative;
   background-color: #fff;
-  margin-top: 1px;
+  margin-top: 0.15522vh;
   padding-top: 15px;
-  height: 100px;
+  height: 15.22vh;
 }
   /* Sidebar-3 ends here */
 /* Sidebar ends here   */
@@ -272,3 +315,89 @@ i {
 }
 
 /* events end */
+
+@media (max-width: 820px) {
+  body {
+    overflow: hidden;
+  }
+  
+  .navbar {
+    width: 100%;
+  }
+
+  .sidebar-container {
+    display: none;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    margin: -215px;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    margin: 25px;
+  }
+
+  .navbar .form-control {
+    margin-left: -125px;
+    width: 20px!important;
+    background-position: 5px;
+    background-size: 14px;
+    height: 30px;
+  }
+
+  .navbar ul {
+    position: absolute;
+    top: -35px;
+    left: 53vw;
+    transform: scale(0.7);
+  }
+
+  #flag-container {
+    margin: 47px 5px;
+  }
+
+  #profile-container {
+    margin: 40px 5px;
+  }
+
+  .notification {
+    margin: 27px 5px;
+  }
+
+  .sidebar-container {
+    width: 190px;
+  }
+  .sidebar-container li {
+    padding-left: 40px;
+    padding-top: 0;
+  }
+
+  #sidebar-2, #sidebar-3 {
+    margin-top: 1px;
+    padding: 0;
+  }
+
+  #sidebar-3 li:first-child {
+    padding-top: 8px;
+  }
+
+  .selected {
+    margin-left: 30px;
+    padding-left: 0;
+  }
+
+  .selected i {
+    margin-left: -30px;
+  }
+
+  .selected .dash {
+    position: absolute;
+    left: -23px;
+  }
+
+  h6 {
+    margin-left: 10px;
+  }
+}
